@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qarz Boshqaruvi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>Qarz Boshqaruvi</header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Ism bo'yicha qidirish" />
+    <input type="date" id="searchDate" placeholder="Sana bo'yicha qidirish" />
+  </div>
+
+  <div class="container">
+    <button id="openAddModal" class="open-modal-btn">+ Qarz Qo'shish</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Ismi</th>
+          <th>Summasi</th>
+          <th>Sanasi</th>
+          <th>Amallar</th>
+        </tr>
+      </thead>
+      <tbody id="loanTableBody">
+        <!-- Rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Add/Edit Modal -->
+  <div class="modal" id="loanModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2 id="modalTitle">Qarz Qo'shish</h2>
+      <form id="loanForm">
+        <input type="text" id="name" placeholder="Qarz olgan odam ismi" required>
+        <input type="number" id="amount" placeholder="Qarz summasi" required>
+        <input type="date" id="date" required>
+        <button type="submit" id="submitButton">Saqlash</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
