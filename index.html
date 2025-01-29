@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codot Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Codot Store</h1>
+        <div class="header-controls">
+            <input type="text" id="searchInput" placeholder="Search for apps...">
+        </div>
+    </header>
+    
+    <main id="appContainer">
+        <div class="app-card" data-title="Task Manager">
+            <img src="https://img.freepik.com/premium-vector/task-manager-flat-style-design-vector-illustration-stock-illustration_357500-258.jpg" alt="Task Manager">
+            <h2>Task Manager</h2>
+            <p>Qilmoqchi bo'lgan ishlaringiz ro'yxatini tuzing va ularni unutib qo'yishdan qo'rqmang. Sizga doimiy eslatma yuboramiz!</p>
+            <button class="button-64" onclick="openApp('https://tdtasks.netlify.app')">
+                <span class="text">Open</span>
+            </button>            
+        </div>
+        
+        <div class="app-card" data-title="Telegram Bot">
+            <img src="https://images.indianexpress.com/2022/11/Telegram-bots-2-1.jpg" alt="Telegram Bot">
+            <h2>Telegram Bot</h2>
+            <p>Codot Teamning universal ko‘p funksiyali Telegram boti. "Open" tugmasini bosib botga o‘ting va xizmatlardan bepul foydalaning!</p>
+            <button class="button-64" onclick="openApp('https://t.me/codotteam_bot')">
+                <span class="text">Open</span>
+            </button> 
+        </div>
+        
+        <div class="app-card" data-title="Platformer O'yin">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeqm-oo3hTE2j9DyWotuNnXFg_lj4KdcDnAg&s" alt="Platformer O'yin">
+            <h2>Platformer O'yin</h2>
+            <p>Beta versiya! Sarguzasht platformer o‘yini. Eshmat ismli qahramonimizga qishlog‘ini qutqarishda yordam bering!</p>
+            <button class="button-64" onclick="openApp('https://storage.googleapis.com/users.gamefroot.com/4881700/game/901803/1738087881928.html')">
+                <span class="text">Open</span>
+            </button> 
+        </div>
+        
+    </main>
+    <main id="appContainer">    
+        <div class="app-card" data-title="Codot News">
+            <img src="https://img.freepik.com/free-vector/news-concept-landing-page_52683-9815.jpg?t=st=1738146561~exp=1738150161~hmac=e5e154ad022d75055d4a882af5eaf92a6ea2083889ee5043fb4d3cdc48ba9a0e&w=1480" alt="Telegram Bot">
+            <h2>Codot News</h2>
+            <p>Texnologiya olamiga oid va kompaniyaga oid yangiliklar jamlangan sayt.Open ni bosish orqali barchasidan xabardor bo'ling!</p>
+            <button class="button-64" onclick="openApp('https://codot-team.my.canva.site/news')">
+                <span class="text">Open</span>
+            </button> 
+        </div>
+        
+        <div class="app-card" data-title="Codot sayt">
+            <img src="/Users/owner/Desktop/thumb.png" alt="Platformer O'yin">
+            <h2>Codot sayt</h2>
+            <p>Beta versiya! Sarguzasht platformer o‘yini. Eshmat ismli qahramonimizga qishlog‘ini qutqarishda yordam bering!</p>
+            <button class="button-64" onclick="openApp('https://codot-team.my.canva.site')">
+                <span class="text">Open</span>
+            </button> 
+        </div>
+        
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
